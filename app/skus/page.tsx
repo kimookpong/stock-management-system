@@ -9,6 +9,9 @@ import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Search, Plus, Package, Edit, Eye } from "lucide-react";
 import Link from "next/link";
 
+// Force dynamic rendering to avoid prerender issues with sidebar
+export const dynamic = "force-dynamic";
+
 const skus = [
   {
     id: 1,

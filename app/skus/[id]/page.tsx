@@ -10,6 +10,9 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Textarea } from "@/components/ui/textarea";
+
+// Force dynamic rendering to avoid prerender issues with sidebar
+export const dynamic = "force-dynamic";
 import {
   Select,
   SelectContent,

@@ -9,6 +9,9 @@ import { StockChart } from "@/components/stock-chart";
 import { RecentMovements } from "@/components/recent-movements";
 import { LowStockAlert } from "@/components/low-stock-alert";
 
+// Force dynamic rendering to avoid prerender issues with sidebar
+export const dynamic = "force-dynamic";
+
 interface DashboardStats {
   totalSkus: number;
   totalWarehouses: number;

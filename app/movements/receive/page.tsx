@@ -19,6 +19,9 @@ import { SidebarTrigger } from "@/components/ui/sidebar";
 import { useToast } from "@/hooks/use-toast";
 import { Plus, Save } from "lucide-react";
 
+// Force dynamic rendering to avoid prerender issues with sidebar
+export const dynamic = "force-dynamic";
+
 export default function ReceivePage() {
   const { toast } = useToast();
   const [formData, setFormData] = useState({

@@ -7,6 +7,9 @@ import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Label } from "@/components/ui/label";
+
+// Force dynamic rendering to avoid prerender issues with sidebar
+export const dynamic = "force-dynamic";
 import {
   Select,
   SelectContent,

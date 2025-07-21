@@ -6,6 +6,9 @@ import { Badge } from "@/components/ui/badge";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Plus, Package } from "lucide-react";
 
+// Force dynamic rendering to avoid prerender issues with sidebar
+export const dynamic = "force-dynamic";
+
 const skuGroups = [
   {
     id: 1,
