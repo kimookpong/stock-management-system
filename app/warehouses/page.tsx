@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { SidebarTrigger } from "@/components/ui/sidebar";
+import { SafeSidebarTrigger } from "@/components/safe-sidebar-trigger";
 import { Warehouse, Plus, MapPin, Package, TrendingUp } from "lucide-react";
 
 // Force dynamic rendering to avoid prerender issues with sidebar
@@ -43,7 +44,7 @@ export default function WarehousesPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="flex items-center gap-4 border-b px-4 py-3 md:px-6">
-        <SidebarTrigger />
+        <SafeSidebarTrigger />
         <h1 className="text-xl font-semibold">Warehouse Management</h1>
       </header>
 

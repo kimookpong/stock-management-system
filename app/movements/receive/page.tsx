@@ -16,6 +16,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { SidebarTrigger } from "@/components/ui/sidebar";
+import { SafeSidebarTrigger } from "@/components/safe-sidebar-trigger";
 import { useToast } from "@/hooks/use-toast";
 import { Plus, Save } from "lucide-react";
 
@@ -54,7 +55,7 @@ export default function ReceivePage() {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="flex items-center gap-4 border-b px-4 py-3 md:px-6">
-        <SidebarTrigger />
+        <SafeSidebarTrigger />
         <h1 className="text-xl font-semibold">Receive Stock</h1>
       </header>
 

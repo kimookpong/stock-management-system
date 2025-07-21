@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { SidebarTrigger } from "@/components/ui/sidebar";
+import { SafeSidebarTrigger } from "@/components/safe-sidebar-trigger";
 import { Search, Plus, Package, Edit, Eye } from "lucide-react";
 import Link from "next/link";
 
@@ -89,7 +90,7 @@ export default function SKUsPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="flex items-center gap-4 border-b px-4 py-3 md:px-6">
-        <SidebarTrigger />
+        <SafeSidebarTrigger />
         <h1 className="text-xl font-semibold">Product Management (SKU)</h1>
       </header>
 

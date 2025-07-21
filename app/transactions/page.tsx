@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { SidebarTrigger } from "@/components/ui/sidebar";
+import { SafeSidebarTrigger } from "@/components/safe-sidebar-trigger";
 import { Label } from "@/components/ui/label";
 
 // Force dynamic rendering to avoid prerender issues with sidebar
@@ -222,7 +223,7 @@ export default function TransactionsPage() {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <header className="flex items-center gap-4 border-b bg-white/80 backdrop-blur-sm px-4 py-4 md:px-6 shadow-sm">
-        <SidebarTrigger />
+        <SafeSidebarTrigger />
         <div className="flex items-center gap-3">
           <h1 className="text-xl font-bold gradient-text">
             Stock Transactions

@@ -9,6 +9,7 @@ import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { SidebarTrigger } from "@/components/ui/sidebar";
+import { SafeSidebarTrigger } from "@/components/safe-sidebar-trigger";
 import { Textarea } from "@/components/ui/textarea";
 
 // Force dynamic rendering to avoid prerender issues with sidebar
@@ -181,7 +182,7 @@ export default function SKUDetailPage() {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <header className="flex items-center gap-4 border-b bg-white/80 backdrop-blur-sm px-4 py-4 md:px-6 shadow-sm">
-        <SidebarTrigger />
+        <SafeSidebarTrigger />
         <Button
           variant="ghost"
           size="sm"
