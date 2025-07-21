@@ -45,7 +45,9 @@ export default function WarehousesPage() {
     <div className="min-h-screen">
       <header className="sticky top-0 z-10 flex items-center gap-4 border-b bg-white/80 backdrop-blur-sm px-4 py-3 md:px-6 shadow-sm">
         <SafeSidebarTrigger />
-        <h1 className="text-xl font-semibold">Warehouse Management</h1>
+        <h1 className="text-xl font-semibold gradient-text">
+          Warehouse Management
+        </h1>
       </header>
 
       <main className="p-4 md:p-6 space-y-6">

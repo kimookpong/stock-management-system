@@ -53,14 +53,14 @@ export default function ReceivePage() {
   };
 
   return (
-    <div>
-      <header className="flex items-center gap-4 border-b px-4 py-3 md:px-6">
+    <div className="min-h-screen">
+      <header className="sticky top-0 z-10 flex items-center gap-4 border-b bg-white/80 backdrop-blur-sm px-4 py-3 md:px-6 shadow-sm">
         <SafeSidebarTrigger />
         <h1 className="text-xl font-semibold gradient-text">Receive Stock</h1>
       </header>
 
       <main className="p-4 md:p-6">
-        <Card className="max-w-2xl mx-auto">
+        <Card className="glass-effect border-0 shadow-lg">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Plus className="h-5 w-5 text-green-600" />

@@ -180,8 +180,8 @@ export default function SKUDetailPage() {
   };
 
   return (
-    <div>
-      <header className="flex items-center gap-4 border-b px-4 py-3 md:px-6">
+    <div className="min-h-screen">
+      <header className="sticky top-0 z-10 flex items-center gap-4 border-b bg-white/80 backdrop-blur-sm px-4 py-3 md:px-6 shadow-sm">
         <SafeSidebarTrigger />
         <Button
           variant="ghost"
