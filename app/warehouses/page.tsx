@@ -42,13 +42,13 @@ const warehouses = [
 
 export default function WarehousesPage() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <header className="flex items-center gap-4 border-b px-4 py-3 md:px-6">
+    <div className="min-h-screen">
+      <header className="sticky top-0 z-10 flex items-center gap-4 border-b bg-white/80 backdrop-blur-sm px-4 py-3 md:px-6 shadow-sm">
         <SafeSidebarTrigger />
         <h1 className="text-xl font-semibold">Warehouse Management</h1>
       </header>
 
-      <main className="flex-1 p-4 md:p-6 space-y-6">
+      <main className="p-4 md:p-6 space-y-6">
         {/* Add Warehouse Button */}
         <div className="flex justify-end">
           <Button>

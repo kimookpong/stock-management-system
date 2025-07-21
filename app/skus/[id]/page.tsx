@@ -180,8 +180,8 @@ export default function SKUDetailPage() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-      <header className="flex items-center gap-4 border-b bg-white/80 backdrop-blur-sm px-4 py-4 md:px-6 shadow-sm">
+    <div>
+      <header className="flex items-center gap-4 border-b px-4 py-3 md:px-6">
         <SafeSidebarTrigger />
         <Button
           variant="ghost"
@@ -189,48 +189,13 @@ export default function SKUDetailPage() {
           onClick={() => router.back()}
           className="hover:bg-slate-100"
         >
-          <ArrowLeft className="h-4 w-4 mr-2" />
+          <ArrowLeft className="h-4 w-4" />
           Back
         </Button>
-        <div className="flex items-center gap-3">
-          <Package className="h-6 w-6 text-blue-600" />
-          <div>
-            <h1 className="text-xl font-bold gradient-text">{formData.name}</h1>
-            <p className="text-sm text-slate-600">{formData.code}</p>
-          </div>
-        </div>
-        <div className="ml-auto flex items-center gap-2">
-          {!isEditing ? (
-            <Button
-              onClick={() => setIsEditing(true)}
-              className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
-            >
-              <Edit3 className="h-4 w-4 mr-2" />
-              Edit Details
-            </Button>
-          ) : (
-            <div className="flex gap-2">
-              <Button
-                variant="outline"
-                onClick={handleCancel}
-                className="hover:bg-slate-100"
-              >
-                <X className="h-4 w-4 mr-2" />
-                Cancel
-              </Button>
-              <Button
-                onClick={handleSave}
-                className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700"
-              >
-                <Save className="h-4 w-4 mr-2" />
-                Save Changes
-              </Button>
-            </div>
-          )}
-        </div>
+        <h1 className="text-xl font-semibold gradient-text">{formData.name}</h1>
       </header>
 
-      <main className="flex-1 p-4 md:p-6">
+      <main className="p-4 md:p-6">
         <Tabs
           value={activeTab}
           onValueChange={setActiveTab}

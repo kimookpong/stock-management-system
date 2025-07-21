@@ -61,22 +61,13 @@ export default function Dashboard() {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-      <header className="flex items-center gap-4 border-b bg-white/80 backdrop-blur-sm px-4 py-4 md:px-6 shadow-sm">
+    <div className="min-h-screen">
+      <header className="sticky top-0 z-10 flex items-center gap-4 border-b bg-white/80 backdrop-blur-sm px-4 py-3 md:px-6 shadow-sm">
         <SafeSidebarTrigger />
-        <div className="flex items-center gap-3">
-          <h1 className="text-2xl font-bold gradient-text">Dashboard</h1>
-        </div>
-        <Badge
-          variant="outline"
-          className="ml-auto bg-white/60 backdrop-blur-sm border-blue-200"
-        >
-          <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
-          {isClient ? `Live • ${currentTime}` : "Live"}
-        </Badge>
+        <h1 className="text-xl font-semibold gradient-text">Dashboard</h1>
       </header>
 
-      <main className="flex-1 p-4 md:p-6 space-y-6">
+      <main className="p-4 md:p-6 space-y-6">
         {/* Stats Cards */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <Card className="hover-lift glass-effect border-0 shadow-lg">

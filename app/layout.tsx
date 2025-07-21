@@ -24,7 +24,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-100 min-h-screen relative overflow-hidden`}
+        className={`${inter.className} bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-100 min-h-screen relative`}
       >
         {/* Animated Background Elements */}
         <div className="fixed inset-0 pointer-events-none">
@@ -38,14 +38,16 @@ export default async function RootLayout({
         <div className="fixed inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cmVjdCB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIGZpbGw9Im5vbmUiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIxLjUiIGZpbGw9IiNlMmU4ZjAiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjYSkiLz48L3N2Zz4=')] opacity-20 pointer-events-none"></div>
 
         {/* Content */}
-        <div className="relative z-10 min-h-screen">
+        <div className="relative z-10 w-full">
           {session ? (
             <SidebarProvider>
-              <AppSidebar />
-              <main className="flex-1 overflow-hidden">{children}</main>
+              <div className="flex min-h-screen w-full">
+                <AppSidebar />
+                <main className="flex-1 w-full">{children}</main>
+              </div>
             </SidebarProvider>
           ) : (
-            <main className="flex-1">{children}</main>
+            <main className="w-full">{children}</main>
           )}
         </div>
 

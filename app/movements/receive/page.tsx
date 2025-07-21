@@ -53,13 +53,13 @@ export default function ReceivePage() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div>
       <header className="flex items-center gap-4 border-b px-4 py-3 md:px-6">
         <SafeSidebarTrigger />
-        <h1 className="text-xl font-semibold">Receive Stock</h1>
+        <h1 className="text-xl font-semibold gradient-text">Receive Stock</h1>
       </header>
 
-      <main className="flex-1 p-4 md:p-6">
+      <main className="p-4 md:p-6">
         <Card className="max-w-2xl mx-auto">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
